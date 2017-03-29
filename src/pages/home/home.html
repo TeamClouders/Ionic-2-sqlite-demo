@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Sqlite Example
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h4>Lets Create Simple Todo List which works with Sqlite Database.</h4>
+    <div>
+        <ion-item>
+            <ion-label fixed>Enter Todo</ion-label>
+            <ion-input type="text" [(ngModel)]="text"></ion-input>
+        </ion-item>
+
+        <button ion-button (click)="add(text)">Add</button>
+
+    </div>
+    <ul>
+        <li *ngFor="let todo of todos; let i=index">{{todo.todoItem}} <span ion-button (click)="update(todo.id,todo.todoItem)">Update</span> <span ion-button (click)="delete(todo.id)">X</span></li>
+    </ul>
+
+</ion-content>
