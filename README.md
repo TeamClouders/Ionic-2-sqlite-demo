@@ -1,4 +1,4 @@
-#Cordova Sqlite Example in Ionic 2
+# Cordova Sqlite Example in Ionic 2
 
 The Purpose to make this demo is because many of developers having issue with lots of plugins and this is one of them. So I tried to Make Simple to Demo with `CRUD` Operation in Sqlite Ionic 2.
 
